@@ -1,0 +1,92 @@
+/*Стили меню*/
+#menu {
+    width: 80%;
+    background: #333333;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+
+}
+ul.drop-down-menu  {
+    list-style: none;
+    position: relative;
+    float: left;
+    margin: 0;
+    padding: 0;
+
+}
+ul.drop-down-menu  a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding:0 15px;
+    width: 160px;
+    padding: 15px 0;
+    text-align: center;
+}
+ul.drop-down-menu  li {
+    position: relative;
+    float: left;
+    background: #333333;
+    margin: 0;
+    padding: 0;
+}
+ul.drop-down-menu  ul {
+    list-style: none;
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#fff;
+    padding:0
+}
+ul.drop-down-menu  ul li {
+    float: none;
+
+}
+ul.drop-down-menu li:hover {
+    background: #cccccc;
+    color: white;
+}
+ul.drop-down-menu  ul ul {
+    top: 0;
+    left: 100%;
+}
+ul.drop-down-menu  li:hover > ul {
+    display: block;
+}
+
+/*Стили таблицы*/
+#table {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: center;
+}
+th, td {
+    border: 1px inset #000000;
+    padding: 10px;
+}
+table {
+    table-layout: unset;
+    width: 100%;
+    height: 20px;
+    border-collapse: collapse;
+}
+th {
+    background: #cccccc;
+}
+tr:nth-child(odd):not([type="line-result"]) {
+    background: #eeeeee;
+}
+tr:last-child {
+    font-weight: bold;
+}
+tr:last-child td:not([type="result"]) {
+    text-align: right;
+}
+
+
+
+
+
